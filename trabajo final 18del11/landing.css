@@ -1,0 +1,294 @@
+:root{
+    --color1:#D0E9F2;
+    --color2:#3F5F73;
+    --color3:#A69485;
+    --color4:#A8BFBB;
+    --color5: #80A69B;
+    --color6: #000;
+
+}
+
+body {
+    background-color: var(--color1);
+    margin: auto;
+    font-family:serif;
+    max-width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: var(--color4);
+    font-size: 1rem;
+    padding: auto;
+}
+
+footer {
+    background-color: var(--color2);
+    margin: auto;
+    width: 100%;
+    height:auto;
+    padding: 2rem;
+}
+
+h1 {
+    color: var(--color2);
+    text-align: center;
+    font-size: 45px;
+    display: inline-block;
+    width: 50%;
+    margin-left: 260px;
+    position: absolute;
+    top: 5%;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+p {
+    font-size: 25px;
+    color: var(--color3);
+    text-align: center;
+}
+
+.navegacion {
+    text-align: center;
+}
+
+.inicio {
+    list-style-type: none;
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.inicio li {
+    display: inline;
+    text-align: center;
+    width: fit-content;
+}
+
+.inicio li a {
+    padding: 10px 50px;
+    text-decoration: none;
+    width: 200px;
+    color: var(--color4);
+    background-color: var(--color5);
+    text-align: center;
+    margin: 10px auto;
+}
+
+.inicio li a:hover {
+    background-color: var(--color3);
+    color: var(--color6);
+}
+.redes {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.intercalando {
+    display: flex;
+    /*uno al lado del otro*/
+    flex-wrap: wrap;
+    margin:5%;
+    justify-content: center;
+}
+
+.texto,
+.foto {
+    width: 45%;
+    /* más ancho para que se vea bien */
+    padding: 10px;
+    height: auto;
+    text-align: center;
+}
+
+.texto {
+    text-align: left;
+    color: var(--color3);
+    font-size: 20px;
+
+}
+
+.resumen {
+    font-size: 20px;
+    color: var(--color3);
+    text-align: left;
+    margin: 45px;
+    padding: 10px;
+
+}
+
+h2 {
+    color: var(--color3);
+    text-align: center;
+}
+
+.colaboracion {
+    display: flex;
+    flex-wrap: wrap;
+    /*para qeu se ajusten al contenedor*/
+    margin: 5%;
+    padding: 2.5%;
+    justify-content: center;
+    /*centra el contenedor*/
+    gap: 2rem;
+}
+.textocolaboracion {
+    text-align: left;
+    color: var(--color3);
+    font-size: 30px;
+    margin: 20px;
+    flex: 1 1 300px;
+    box-sizing: border-box;
+    /*indican al navegador que el rellono y borde de un elemento deben incluirse en su ancho (width)*/
+}
+
+.img_colaboracion {
+    border-radius: 20px;
+    text-align: right;
+    flex: 1 1 300px;
+    box-sizing: border-box;
+}
+
+.video {
+    text-align: center;
+    flex: 1 1 300px;
+    box-sizing: border-box;
+
+}
+
+.donacion {
+    background-color: var(--color5);
+    /*cambiar el color*/
+    margin: 5%;
+    display: flex;
+    /*gap: 300px;*/
+    padding: 2.5%;
+    justify-content: center;
+    /*centra el contenedor*/
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.donacion_cuenta {
+    text-align: left;
+    color: var(--color2);
+    /*cambiar color*/
+    margin: auto;
+    padding: auto;
+    font-size: 23px;
+    line-height: 1.5;
+    flex: 1 1 300px;
+    box-sizing: border-box;
+}
+
+h3 {
+    color: var(--color2);
+    text-align: left;
+    margin: auto;
+}
+
+.donacion_insumos {
+    text-align: left;
+    color: var(--color2);
+    /*cambiar color*/
+    margin: auto;
+    padding: auto;
+    font-size: 23px;
+    flex: 1 1 300px;
+    box-sizing: border-box;
+}
+
+.apadrinar_p {
+    color: var(--color2);
+}
+
+h3 {
+    color: var(--color2);
+    text-align: center;
+}
+
+.condicion_apadrinar {
+    text-align: left;
+    list-style-type: none;
+    /*para sacar los puntitos*/
+    color: var(--color2);
+    line-height: 1.5;
+    padding-left: 35%;
+
+}
+
+.grid_apadrinar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* una fraccion de espacio entre lascolumnas*/
+    grid-template-rows: repeat(3, 1fr);  /*cada fila ocupa una fraccion de alto disponible*/
+    padding: 65px;
+
+}
+
+.p_apadrinar {
+    font-size: 20px;
+    text-align: left;
+}
+
+.registro {
+    background-color: #80A69B;
+    padding: 20px;
+    text-align: right;
+    margin: 150px;
+    margin-top: 2.5px;
+    display: flex;
+}
+
+.parrafo_form {
+    text-align: left;
+    font-size: 20px;
+    color: #3F5F73;
+    padding: 20px;
+    line-height: 1.5;
+}
+.formulario{
+    padding: 20px;
+}
+
+
+
+.h2contacto{
+    color: var(--color2);
+    margin-top: 35px;
+
+
+}
+.medios_contactos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+    margin: 95px;
+    
+}
+.ubicacion{
+    height: auto;
+    width: auto;
+}
+.divcontacto{
+    line-height: 2.5;
+    color: var(--color2);
+    font-size: 20px;
+    width: 100%;
+}
+.medios_contactos ul{
+list-style-type: none;
+}
+    
+
+        
